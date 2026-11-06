@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diagnóstico Digital para Clínicas | Orvion Web</title>
+  <meta name="description" content="Descubra em 2 minutos como está a presença digital da sua clínica: site, Google e captação de pacientes. Gratuito e sem cadastro.">
+  <meta name="theme-color" content="#0b0c0e">
+  <meta property="og:title" content="Diagnóstico Digital para Clínicas | Orvion Web">
+  <meta property="og:description" content="Seu site, seu Google e sua captação de pacientes analisados em 2 minutos. Gratuito.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/sora-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="guides" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#" data-restart aria-label="Orvion Web, início">
+        <img src="assets/img/logo-full-optimized.webp" alt="Orvion Web" width="168" height="44">
+      </a>
+      <a class="nav-link" id="nav-site" href="#" target="_blank" rel="noopener">Conheça a Orvion
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ INTRO ============ -->
+    <section class="view view--intro is-active" id="view-intro" aria-labelledby="intro-title">
+      <div class="intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="dot"></span>Diagnóstico gratuito para clínicas</p>
+          <h1 id="intro-title">Descubra por que sua clínica <em>não aparece</em> para novos pacientes</h1>
+          <p class="lead">Responda algumas perguntas rápidas sobre a clínica. Se você tiver site, nós testamos a velocidade, o visual no celular e o que o Google enxerga. O resultado sai na hora, nesta tela.</p>
+          <div class="intro-actions">
+            <button class="btn btn-primary btn-lg" type="button" data-start>
+              <span class="btn-label"><span>Começar diagnóstico</span><span>Começar diagnóstico</span></span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+          </div>
+          <ul class="intro-meta">
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 4.8V8l2.2 1.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>2 minutos</li>
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Sem cadastro</li>
+            <li><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Ninguém entra em contato sem você pedir</li>
+          </ul>
+        </div>
+
+        <div class="intro-preview" aria-hidden="true">
+          <div class="preview-card">
+            <div class="preview-top">
+              <span class="preview-tag">Exemplo de resultado</span>
+              <span class="preview-name">Clínica exemplo · Brasília</span>
+            </div>
+            <div class="preview-score">
+              <svg viewBox="0 0 120 120" class="ring"><circle cx="60" cy="60" r="52" class="ring-bg"/><circle cx="60" cy="60" r="52" class="ring-fg" style="--p:.58"/></svg>
+              <div><strong>58</strong><span>/100</span></div>
+            </div>
+            <ul class="preview-bars">
+              <li><span>Site</span><i style="--w:44%"></i></li>
+              <li><span>Google</span><i style="--w:62%"></i></li>
+              <li><span>Captação</span><i style="--w:70%"></i></li>
+            </ul>
+            <div class="preview-alert"><b>Prioridade 1</b> O site leva 7,8 s para mostrar o conteúdo no celular.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section class="view view--quiz" id="view-quiz" aria-live="polite">
+      <div class="quiz-shell">
+        <div class="quiz-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progresso do diagnóstico">
+          <div class="quiz-progress-bar"></div>
+        </div>
+        <p class="quiz-count" id="quiz-count"></p>
+        <form class="quiz-card" id="quiz-form" novalidate>
+          <div id="quiz-step"></div>
+          <p class="quiz-error" id="quiz-error" role="alert"></p>
+          <div class="quiz-nav">
+            <button class="btn-ghost" type="button" id="quiz-back">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13 8H3M7 4 3 8l4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Voltar
+            </button>
+            <button class="btn btn-primary" type="submit" id="quiz-next">
+              <span class="btn-label"><span>Continuar</span><span>Continuar</span></span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ LOADING ============ -->
+    <section class="view view--loading" id="view-loading" aria-live="polite">
+      <div class="loading-shell">
+        <div class="scanner" aria-hidden="true">
+          <div class="scanner-frame">
+            <div class="scanner-line"></div>
+            <div class="scanner-skeleton"><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <h2 id="loading-title">Analisando sua presença digital</h2>
+        <p class="loading-sub" id="loading-sub">Isso leva de 20 a 60 segundos. Não feche esta página.</p>
+        <ol class="loading-steps" id="loading-steps"></ol>
+      </div>
+    </section>
+
+    <!-- ============ RESULT ============ -->
+    <section class="view view--result" id="view-result">
+      <div class="result-shell" id="result-root"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Orvion Web · Brasília, DF</p>
+    <p class="footer-note">Suas respostas ficam só neste navegador. O endereço do site é enviado ao Google PageSpeed Insights para o teste.</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
